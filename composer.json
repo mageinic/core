@@ -1,0 +1,27 @@
+{
+    "name": "mageinic/core",
+    "description": "MageINIC Core",
+    "require": {
+        "php": ">=7.3.0"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "Commercial"
+    ],
+    "authors": [
+        {
+            "name": "MageINIC",
+            "email": "support@mageinic.com",
+            "homepage": "https://www.mageinic.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "MageINIC\\Core\\": ""
+        }
+    }
+}
