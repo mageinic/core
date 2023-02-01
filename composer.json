@@ -1,10 +1,14 @@
 {
     "name": "mageinic/core",
     "description": "MageINIC Core",
+    "version": "1.0.0",
     "require": {
         "php": ">=7.3.0"
     },
     "type": "magento2-module",
+    "keywords": ["mageinic", "core", "magento 2"],
+    "homepage": "https://github.com/mageinic",
+    "license": "MIT",
     "authors": [
         {
             "name": "MageINIC",
