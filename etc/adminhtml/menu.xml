@@ -27,9 +27,16 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="MageINIC_Core::core" title="MageINIC" module="MageINIC_Core"
-             sortOrder="10" resource="MageINIC_Core::core"/>
-        <add id="MageINIC_Core::core_configuration" title="Configuration" module="MageINIC_Core"
-             sortOrder="100" parent="MageINIC_Core::core" resource="MageINIC_Core::core"/>
+        <add id="MageINIC_Core::core"
+             title="MageINIC"
+             module="MageINIC_Core"
+             sortOrder="10"
+             resource="MageINIC_Core::core"/>
+        <add id="MageINIC_Core::core_configuration"
+             title="Configuration"
+             module="MageINIC_Core"
+             sortOrder="100"
+             parent="MageINIC_Core::core"
+             resource="MageINIC_Core::core"/>
     </menu>
 </config>
