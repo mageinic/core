@@ -23,6 +23,6 @@
  * @author MageINIC <support@mageinic.com>
  */
 
-use \Magento\Framework\Component\ComponentRegistrar;
+use Magento\Framework\Component\ComponentRegistrar;
 
 ComponentRegistrar::register(ComponentRegistrar::MODULE, 'MageINIC_Core', __DIR__);
