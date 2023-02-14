@@ -1,5 +1,4 @@
-<?xml version="1.0"?>
-<!--
+<?php
 /**
  * MageINIC
  * Copyright (C) 2023 MageINIC <support@mageinic.com>
@@ -23,24 +22,26 @@
  * @license https://opensource.org/licenses/gpl-3.0.html GNU General Public License,version 3 (GPL-3.0)
  * @author MageINIC <support@mageinic.com>
  */
--->
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
-    <menu>
-        <add id="MageINIC_Core::core"
-             title="MageINIC"
-             module="MageINIC_Core"
-             translate="title"
-             sortOrder="10"
-             resource="MageINIC_Core::core"/>
-        <add id="MageINIC_Core::marketplace"
-             title="MageINIC Extensions"
-             module="MageINIC_Core"
-             translate="title"
-             sortOrder="9999"
-             action="mageinic_core/index/moreextensions"
-             target="_blank"
-             parent="MageINIC_Core::core"
-             resource="MageINIC_Core::core"/>
-    </menu>
-</config>
+declare(strict_types=1);
+
+namespace MageINIC\Core\Controller\Adminhtml\Index;
+
+use Magento\Backend\App\Action;
+use Magento\Framework\App\Action\HttpGetActionInterface;
+use Magento\Framework\App\Action\HttpPostActionInterface;
+
+/**
+ * More extension controller
+ */
+class MoreExtensions extends Action implements HttpGetActionInterface, HttpPostActionInterface
+{
+    /**
+     * @return \Magento\Framework\App\ResponseInterface|\Magento\Framework\Controller\Result\Redirect|\Magento\Framework\Controller\ResultInterface
+     */
+    public function execute()
+    {
+        /** @var \Magento\Framework\Controller\Result\Redirect $resultRedirect */
+        $resultRedirect = $this->resultRedirectFactory->create();
+        return $resultRedirect->setUrl('https://mageinic.com/magento-2-extensions.html');
+    }
+}
