@@ -3,7 +3,7 @@
     "description": "MageINIC Core",
     "version": "1.0.0",
     "require": {
-        "php": ">=7.3.0"
+        "php": "^8.0"
     },
     "type": "magento2-module",
     "keywords": ["mageinic", "core", "magento 2"],
