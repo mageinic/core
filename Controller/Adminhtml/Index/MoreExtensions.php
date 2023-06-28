@@ -29,6 +29,7 @@ namespace MageINIC\Core\Controller\Adminhtml\Index;
 use Magento\Backend\App\Action;
 use Magento\Framework\App\Action\HttpGetActionInterface;
 use Magento\Framework\App\Action\HttpPostActionInterface;
+use Magento\Framework\Controller\Result\Redirect;
 
 /**
  * More extension controller
@@ -36,11 +37,11 @@ use Magento\Framework\App\Action\HttpPostActionInterface;
 class MoreExtensions extends Action implements HttpGetActionInterface, HttpPostActionInterface
 {
     /**
-     * @return \Magento\Framework\App\ResponseInterface|\Magento\Framework\Controller\Result\Redirect|\Magento\Framework\Controller\ResultInterface
+     * @inheritdoc
      */
     public function execute()
     {
-        /** @var \Magento\Framework\Controller\Result\Redirect $resultRedirect */
+        /** @var Redirect $resultRedirect */
         $resultRedirect = $this->resultRedirectFactory->create();
         return $resultRedirect->setUrl('https://mageinic.com/magento-2-extensions.html');
     }
