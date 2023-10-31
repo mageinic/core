@@ -1,14 +1,16 @@
 {
     "name": "mageinic/core",
-    "description": "MageINIC Core",
+    "description": "MageINIC Core module for Magento 2. All MageINIC modules requires this module.",
     "version": "1.0.0",
     "require": {
         "php": "^8.0"
     },
     "type": "magento2-module",
     "keywords": ["mageinic", "core", "magento 2"],
-    "homepage": "https://github.com/mageinic",
-    "license": "MIT",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
     "authors": [
         {
             "name": "MageINIC",
