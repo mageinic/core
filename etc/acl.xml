@@ -29,11 +29,11 @@
     <acl>
         <resources>
             <resource id="Magento_Backend::admin">
-                <resource id="MageINIC_Core::core" title="MageINIC Extensions" sortOrder="0"/>
+                <resource id="MageINIC_Core::core" title="MageINIC Extensions" translate="title" sortOrder="0"/>
                 <resource id="Magento_Backend::stores">
                     <resource id="Magento_Backend::stores_settings">
                         <resource id="Magento_Config::config">
-                            <resource id="MageINIC_Core::core_config"
+                            <resource id="MageINIC_Core::core_configuration"
                                       title="MageINIC Extensions Section" translate="title" sortOrder="0"/>
                         </resource>
                     </resource>
